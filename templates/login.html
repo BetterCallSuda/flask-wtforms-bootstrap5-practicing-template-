@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+{% from 'bootstrap5/form.html' import render_form %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    {% block styles %}
+        {{ bootstrap.load_css() }}
+    {% endblock %}
+</head>
+
+
+
+
+<body>
+    <div class="container space-above">
+    {{ render_form(form, novalidate=True) }}
+    </div>
+
+</body>
+</html>
